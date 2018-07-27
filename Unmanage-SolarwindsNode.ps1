@@ -46,10 +46,12 @@
 ### BEGIN SCRIPT ###
 
 
-param ([string]$orionhost,
-	[string]$username,
-	[string]$password,
-    [int]$minutes = 10)
+param (
+	[Parameter(Mandatory=$true)][string]$orionhost,
+	[Parameter(Mandatory=$true)][string]$username,
+	[Parameter(Mandatory=$true)][string]$password,
+    [int]$minutes = 10
+	)
 
 
 # Write console output to log in temp folder
