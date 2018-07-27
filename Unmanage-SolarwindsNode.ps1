@@ -61,7 +61,7 @@ start-transcript "$($env:temp)\unmanage.log"
 # Load SWIS snap in, error and quit if not installed
 try {
     "Loading SWIS Snapin..."
-    Add-PSSnapin SwisSnapin
+    Add-PSSnapin SwisSnapin -ErrorAction stop
     }
 catch {
     "Unable to load snap-in!"
